@@ -1,0 +1,327 @@
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel
+$ git init
+Initialized empty Git repository in C:/Users/DCS User/Desktop/2019csc030/daylaravel/.git/
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (master)
+$ echo "# daylaravel" >> README.md
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (master)
+$ git branch -M main
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git remote add origin https://github.com/luxshika/daylaravel.git
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "readme file added"
+[main (root-commit) f357e7a] readme file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git config --global user.gmail "luxshikaprashath5@gmail.com"
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git config --global user.name "Luxshika Prashath"
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "readme file added"
+On branch main
+nothing to commit, working tree clean
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$  git push --set-upstream origin main
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/luxshika/daylaravel.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add first.java
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Everything up-to-date
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   first.java
+
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "java file added"
+[main 50ee980] java file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.java
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add .
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "java file added"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/luxshika/daylaravel.git
+   f357e7a..50ee980  main -> main
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Everything up-to-date
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add .
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Everything up-to-date
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "java file added"
+[main 0b0d169] java file added
+ 1 file changed, 10 insertions(+)
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add .
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "java file added"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 394 bytes | 394.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/luxshika/daylaravel.git
+   50ee980..0b0d169  main -> main
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+To https://github.com/luxshika/daylaravel.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/luxshika/daylaravel.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 716 bytes | 4.00 KiB/s, done.
+From https://github.com/luxshika/daylaravel
+   0b0d169..ce66286  main       -> origin/main
+Updating 0b0d169..ce66286
+Fast-forward
+ first.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Everything up-to-date
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git pull
+Already up to date.
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 708 bytes | 7.00 KiB/s, done.
+From https://github.com/luxshika/daylaravel
+   ce66286..cc7a59a  main       -> origin/main
+error: Your local changes to the following files would be overwritten by merge:
+        first.java
+Please commit your changes or stash them before you merge.
+Aborting
+Updating ce66286..cc7a59a
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add .
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git commit -m "c added"
+[main 32499c9] c added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git pull
+Auto-merging first.java
+CONFLICT (content): Merge conflict in first.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main|MERGING)
+$ git add .
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main|MERGING)
+$ git commit -m "c added"
+[main d678900] c added
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 717 bytes | 717.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/luxshika/daylaravel.git
+   cc7a59a..d678900  main -> main
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sub.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git add sub.java
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git/-m "import change"
+bash: git/-m: No such file or directory
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git stash -m "import change"
+Saved working directory and index state On main: import change
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git stash list
+stash@{0}: On main: import change
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git pull
+Already up to date.
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 701 bytes | 8.00 KiB/s, done.
+From https://github.com/luxshika/daylaravel
+   d678900..e30e67f  main       -> origin/main
+Updating d678900..e30e67f
+Fast-forward
+ first.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git stash list
+stash@{0}: On main: import change
+
+DCS User@DESKTOP-HP7FUTN MINGW64 ~/Desktop/2019csc030/daylaravel (main)
+$ git stash pop
